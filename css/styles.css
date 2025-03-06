@@ -1,0 +1,296 @@
+/*Color de fondo del sitio*/
+/*body{
+    background-color: rgb(221, 229, 250);
+}*/
+
+/*Tamaño del logo*/
+.imgLogo {
+    width: 17%;
+}
+
+/*-------------------------------------------------------LINKS----------------------------------------------------------*/
+.linkWeb .contenedorLinks:hover {
+    filter: drop-shadow(0px 0px 5px #aa4d17);
+}
+
+.linkWeb {
+    /* align-items: center;
+    margin: 60;
+    padding: 50;*/
+    display: flex;
+    gap: 0.5px;
+
+}
+
+.colorLink {
+    color: rgb(255, 255, 255);
+}
+
+.contenedorLinks {
+    background-color: #c9ab7085;
+    /*fondo*/
+    /*  width: 15%; /*ancho*/
+   /* place-items: center;
+    /*cetrar*/
+    margin: 7px;
+    padding: 9px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*------------------------------------------------------BOTONES-------------------------------------------------------*/
+button {
+    background-color: #e9d6be;
+    ;
+}
+
+button:hover {
+    filter: drop-shadow(0px 0px 5px #aa7b17);
+}
+
+a {
+    text-decoration: none;
+}
+
+/*.activo{
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius:40px;S
+}
+/*Negrita a las letras*/
+.sub {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*titulo Centro de estetica*/
+.titulo {
+    color: #cfa64c;
+    margin-left: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Color de fondo de "Servicios"*/
+.serviciosColor {
+    background-color: #e4ceb4;
+}
+
+/* Color de links*/
+
+/*Color de subtitulos de Servicios*/
+.subtitulosServicios {
+    color: #bd9c42;
+}
+
+.contenedorSuperior {
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    backdrop-filter: blur(10px);
+}
+
+/*sacar el punto al ul*/
+
+.serviciosUl {
+    display: flex;
+    flex-direction:row;
+    list-style: none;
+    gap: 120px;
+    align-items: center;
+}
+
+/*tamaño de imagenes*/
+.tamañoImgServicios {
+    width: 125px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.tamañoImgCarrusel {
+    width: 65%;
+    margin: 50px auto;
+
+}
+
+.tamañoImgCarrito {
+    width: 23px;
+    margin: 5px;
+}
+
+/*contenedor para los servicios*/
+.contenedor {
+    background-color: #d3af815b;
+    /*fondo*/
+    width: 54%;
+    /*ancho*/
+    place-items: center;
+    /*cetrar*/
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+    /*border radius-padding*/
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
+FOOTER {
+    background-color: #e4ceb4;
+}
+
+.redes {
+    list-style: none;
+}
+
+.anchoRedes {
+    width: 5%;
+    padding: 1%;
+}
+/*---------------------------------------------------------------GRID CODIGO----------------------------------------------------------*/
+
+/*-------------------------------------------------------------GRID---------------------------------------------------------------------------*/
+
+main .pestañaProductos {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+}
+.caja1 {
+    display: grid;
+    background-color: #e4ceb4;
+    
+}
+.caja2{
+    margin-left: 30px;
+
+}.servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 120px;
+    align-items: center;
+}
+.productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+.galeriaProductos{
+    background-color: #d3af815b;
+    /*fondo*/
+    width: 80%;
+    /*ancho*/
+    place-items: center;
+    /*cetrar*/
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+footer{
+    margin-top: 10px;
+}
+
+
+/*----------------------------------------------------GRID-MOVILE-----------------------------------------------------------------------------*/
+@media (max-width:500px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .imgLogo{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .contenedorSuperior{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .caja1{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .caja2{
+        width: 100%;
+    }
+    .caja1 h3 .caja2 h1{
+        text-align: center;
+
+    }
+    .linkWeb{
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .contenedorLinks{
+        width: 100%;
+        margin: 5px;
+        padding: 8px;
+    }
+    .servicios {
+        grid-template-columns: 1fr;
+    
+    }
+    .productos {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .titulo{
+        margin-left: 0;
+        font-size: 20px;
+    }
+    .tamañoImgServicios{
+        width: 100%;
+        max-width: 150px;
+        margin: 5px 0;
+    }
+    .galeriaProductos .contenedor {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .tamañoImgCarrusel{
+        width: 100%;
+    }
+    .tamañoImgCarrito{
+        width: 20px;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    
+    footer {
+        text-align: center; 
+        padding: 10px; 
+    }
+    .redes li{
+        margin-bottom: 10px;
+        padding: 0;
+    }
+}
+
+
+
+
+
+  /* header {
+        flex-direction: column;
+    }*/
+
+
+
+/*.gridContenedor {
+        display: grid;
+        grid-template-areas:
+            "filtros"
+            "productos";
+    }
