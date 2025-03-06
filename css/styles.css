@@ -84,7 +84,7 @@ a {
 
 /*--------------------------------------------------CARDS-------------------------------------------------*/
 /*contenedor para los servicios*/
-.contenedor {
+.card {
     background-color: #d3af815b;
     width: 54%;/*fondo*/
     place-items: center;
