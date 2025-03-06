@@ -1,8 +1,3 @@
-/*Color de fondo del sitio*/
-/*body{
-    background-color: rgb(221, 229, 250);
-}*/
-
 /*Tamaño del logo*/
 .imgLogo {
     width: 17%;
@@ -14,12 +9,8 @@
 }
 
 .linkWeb {
-    /* align-items: center;
-    margin: 60;
-    padding: 50;*/
     display: flex;
     gap: 0.5px;
-
 }
 
 .colorLink {
@@ -28,28 +19,27 @@
 
 .contenedorLinks {
     background-color: #c9ab7085;
-    /*fondo*/
-    /*  width: 15%; /*ancho*/
-   /* place-items: center;
-    /*cetrar*/
     margin: 7px;
     padding: 9px;
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-
 }
 
 /*------------------------------------------------------BOTONES-------------------------------------------------------*/
+
+/*color de fondo del boton*/
 button {
     background-color: #e9d6be;
     ;
 }
 
+/*fondo del button (color)*/
 button:hover {
     filter: drop-shadow(0px 0px 5px #aa7b17);
 }
-
+/*------------------------------------ESTILOS/COLORES-------------------------------------------------*/
+/*elimina la linea debajo del texto*/
 a {
     text-decoration: none;
 }
@@ -58,7 +48,8 @@ a {
     background-color: #ffffff;
     padding: 10px;
     border-radius:40px;S
-}
+}*/
+
 /*Negrita a las letras*/
 .sub {
     font-weight: 600;
@@ -69,7 +60,9 @@ a {
 .titulo {
     color: #cfa64c;
     margin-left: 40%;
+    /*margen de lado izquierdo*/
     font-family: Georgia, 'Times New Roman', Times, serif;
+    /*fuentes*/
 }
 
 /*Color de fondo de "Servicios"*/
@@ -77,30 +70,45 @@ a {
     background-color: #e4ceb4;
 }
 
-/* Color de links*/
-
 /*Color de subtitulos de Servicios*/
 .subtitulosServicios {
     color: #bd9c42;
 }
 
+/*----------------------------------------------CONTENEDORES--------------------------------------------*/
 .contenedorSuperior {
     display: flex;
     justify-content: space-between;
-    /*align-items: center;*/
-    backdrop-filter: blur(10px);
+    /*backdrop-filter: blur(10px);*/
 }
 
-/*sacar el punto al ul*/
-
-.serviciosUl {
+/*--------------------------------------------------CARDS-------------------------------------------------*/
+/*contenedor para los servicios*/
+.contenedor {
+    background-color: #d3af815b;
+    width: 54%;/*fondo*/
+    place-items: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 15px;
     display: flex;
-    flex-direction:row;
-    list-style: none;
+    flex-direction: column;
+    /*border radius-padding*/
+}
+
+/*Ordena el Ul*/
+/*.serviciosUl {
+    display: flex;
+    flex-direction: row;
+    list-style: none;/*elimina el punto al ul
     gap: 120px;
     align-items: center;
-}
+}*/
 
+
+
+
+/*---------------------------------------------------TAMAÑO DE IMAGENES--------------------------------------*/
 /*tamaño de imagenes*/
 .tamañoImgServicios {
     width: 125px;
@@ -120,26 +128,9 @@ a {
     margin: 5px;
 }
 
-/*contenedor para los servicios*/
-.contenedor {
-    background-color: #d3af815b;
-    /*fondo*/
-    width: 54%;
-    /*ancho*/
-    place-items: center;
-    /*cetrar*/
-    margin: 10px;
-    padding: 5px;
-    border-radius: 15px;
-    /*border radius-padding*/
-    display: flex;
-    flex-direction: column;
-}
-
-
 /*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
 FOOTER {
-    background-color: #e4ceb4;
+    background-color: #e4ceb4; /*color de fondo del footer*/
 }
 
 .redes {
@@ -150,46 +141,50 @@ FOOTER {
     width: 5%;
     padding: 1%;
 }
-/*---------------------------------------------------------------GRID CODIGO----------------------------------------------------------*/
 
-/*-------------------------------------------------------------GRID---------------------------------------------------------------------------*/
+/*----------------------------------------------------------GRID CODIGO-------------------------------------------------*/
+
+/*-------------------------GRID------------------------------*/
 
 main .pestañaProductos {
     display: grid;
     grid-template-columns: 20% 1fr;
 }
+
 .caja1 {
     display: grid;
     background-color: #e4ceb4;
-    
-}
-.caja2{
-    margin-left: 30px;
 
-}.servicios {
+}
+
+.caja2 {
+    margin-left: 30px;
+}
+
+.servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     list-style: none;
     gap: 120px;
     align-items: center;
 }
+
 .productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 6px;
 }
-.galeriaProductos{
-    background-color: #d3af815b;
-    /*fondo*/
-    width: 80%;
-    /*ancho*/
-    place-items: center;
-    /*cetrar*/
+
+.galeriaProductos {
+    background-color: #d3af815b; /*fondo*/
+    width: 80%;/*ancho*/
+    place-items: center;/*cetrar*/
     margin: 10px;
     padding: 5px;
     border-radius: 15px;
 }
-footer{
+
+footer {
     margin-top: 10px;
 }
 
@@ -200,97 +195,93 @@ footer{
         display: grid;
         grid-template-columns: 1fr;
     }
-    .imgLogo{
+
+    .imgLogo {
         width: 50%;
         margin-bottom: 10px;
     }
-    .contenedorSuperior{
+
+    .contenedorSuperior {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-bottom: 20px;
     }
-    .caja1{
+
+    .caja1 {
         width: 100%;
         margin-bottom: 20px;
     }
-    .caja2{
+
+    .caja2 {
         width: 100%;
     }
-    .caja1 h3 .caja2 h1{
+
+    .caja1 h3 .caja2 h1 {
         text-align: center;
 
     }
-    .linkWeb{
+
+    .linkWeb {
         flex-direction: column;
         align-items: center;
         gap: 10px;
     }
-    .contenedorLinks{
+
+    .contenedorLinks {
         width: 100%;
         margin: 5px;
         padding: 8px;
     }
+
     .servicios {
         grid-template-columns: 1fr;
-    
+
     }
+
     .productos {
         grid-template-columns: 1fr;
         gap: 10px;
     }
 
-    .titulo{
+    .titulo {
         margin-left: 0;
         font-size: 20px;
     }
-    .tamañoImgServicios{
+
+    .tamañoImgServicios {
         width: 100%;
         max-width: 150px;
         margin: 5px 0;
     }
+
     .galeriaProductos .contenedor {
         width: 100%;
         padding: 10px;
     }
-    
-    .tamañoImgCarrusel{
+
+    .tamañoImgCarrusel {
         width: 100%;
     }
-    .tamañoImgCarrito{
+
+    .tamañoImgCarrito {
         width: 20px;
     }
-    
+
     header {
         display: flex;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
     }
 
-    
+
     footer {
-        text-align: center; 
-        padding: 10px; 
+        text-align: center;
+        padding: 10px;
     }
-    .redes li{
+
+    .redes li {
         margin-bottom: 10px;
         padding: 0;
     }
 }
-
-
-
-
-
-  /* header {
-        flex-direction: column;
-    }*/
-
-
-
-/*.gridContenedor {
-        display: grid;
-        grid-template-areas:
-            "filtros"
-            "productos";
-    }
