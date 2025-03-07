@@ -68,6 +68,8 @@ a {
 /*Color de fondo de "Servicios"*/
 .serviciosColor {
     background-color: #e4ceb4;
+    color: rgb(255, 255, 255);
+    text-align: center;
 }
 
 /*Color de subtitulos de Servicios*/
