@@ -11,6 +11,7 @@
 .linkWeb {
     display: flex;
     gap: 0.5px;
+    font-family: Open Sans;
 }
 
 .colorLink {
@@ -38,6 +39,7 @@ button {
 button:hover {
     filter: drop-shadow(0px 0px 5px #aa7b17);
 }
+
 /*------------------------------------ESTILOS/COLORES-------------------------------------------------*/
 /*elimina la linea debajo del texto*/
 a {
@@ -88,7 +90,8 @@ a {
 /*contenedor para los servicios*/
 .card {
     background-color: #d3af815b;
-    width: 54%;/*fondo*/
+    width: 54%;
+    /*fondo*/
     place-items: center;
     margin: 10px;
     padding: 5px;
@@ -132,7 +135,8 @@ a {
 
 /*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
 FOOTER {
-    background-color: #e4ceb4; /*color de fondo del footer*/
+    background-color: #e4ceb4;
+    /*color de fondo del footer*/
 }
 
 .redes {
@@ -178,9 +182,12 @@ main .pestañaProductos {
 }
 
 .galeriaProductos {
-    background-color: #d3af815b; /*fondo*/
-    width: 80%;/*ancho*/
-    place-items: center;/*cetrar*/
+    background-color: #d3af815b;
+    /*fondo*/
+    width: 80%;
+    /*ancho*/
+    place-items: center;
+    /*cetrar*/
     margin: 10px;
     padding: 5px;
     border-radius: 15px;
@@ -236,8 +243,13 @@ footer {
         padding: 8px;
     }
 
+    .subtitulosServicios {
+       text-align: center;
+    }
+
     .servicios {
         grid-template-columns: 1fr;
+        place-items: center;
 
     }
 
