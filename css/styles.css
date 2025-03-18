@@ -1,4 +1,9 @@
-/*Tamaño del logo*/
+/*----------------------------------------------BODY STYLES-----------------------------------*/
+
+body{
+    
+}
+/*-----------------------------------------------Tamaño del logo--------------------------*/
 .imgLogo {
     width: 17%;
 }
@@ -11,7 +16,12 @@
 .linkWeb {
     display: flex;
     gap: 0.5px;
-    font-family: Open Sans;
+    font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
 }
 
 .colorLink {
@@ -45,12 +55,15 @@ button:hover {
 a {
     text-decoration: none;
 }
-
-/*.activo{
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius:40px;S
-}*/
+.textoCentrado{
+    text-align: center;
+}
+.activo{
+    background-color: #ab843031;
+   padding:3px;
+   margin:auto;
+    border-radius: 9px;
+}
 
 /*Negrita a las letras*/
 .sub {
@@ -72,12 +85,25 @@ a {
     background-color: #e4ceb4;
     color: rgb(255, 255, 255);
     text-align: center;
-}
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
 
 /*Color de subtitulos de Servicios*/
-.subtitulosServicios {
+.subtitulos {
     color: #bd9c42;
-}
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  
+  
+  }
+  
+
 
 /*----------------------------------------------CONTENEDORES--------------------------------------------*/
 .contenedorSuperior {
@@ -90,12 +116,12 @@ a {
 /*contenedor para los servicios*/
 .card {
     background-color: #d3af815b;
-    width: 54%;
+    width: 75%;
     /*fondo*/
     place-items: center;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 15px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 30px;
     display: flex;
     flex-direction: column;
     /*border radius-padding*/
@@ -116,10 +142,11 @@ a {
 /*---------------------------------------------------TAMAÑO DE IMAGENES--------------------------------------*/
 /*tamaño de imagenes*/
 .tamañoImgServicios {
-    width: 125px;
+    width: 70%;
     border-radius: 15px;
     padding: 5px;
     margin: 10px;
+    
 }
 
 .tamañoImgCarrusel {
@@ -140,11 +167,12 @@ FOOTER {
 }
 
 .redes {
+    display: flex;
     list-style: none;
 }
 
 .anchoRedes {
-    width: 5%;
+    width: 10%;
     padding: 1%;
 }
 
@@ -181,22 +209,9 @@ main .pestañaProductos {
     gap: 6px;
 }
 
-.galeriaProductos {
-    background-color: #d3af815b;
-    /*fondo*/
-    width: 80%;
-    /*ancho*/
-    place-items: center;
-    /*cetrar*/
-    margin: 10px;
-    padding: 5px;
-    border-radius: 15px;
-}
-
 footer {
     margin-top: 10px;
 }
-
 
 /*----------------------------------------------------GRID-MOVILE-----------------------------------------------------------------------------*/
 @media (max-width:500px) {
@@ -243,8 +258,9 @@ footer {
         padding: 8px;
     }
 
-    .subtitulosServicios {
+    .subtitulos {
        text-align: center;
+       
     }
 
     .servicios {
@@ -263,10 +279,12 @@ footer {
         font-size: 20px;
     }
 
+    
     .tamañoImgServicios {
-        width: 100%;
-        max-width: 150px;
-        margin: 5px 0;
+        width: 65%;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 10px;
     }
 
     .galeriaProductos .contenedor {
@@ -298,4 +316,9 @@ footer {
         margin-bottom: 10px;
         padding: 0;
     }
+    .redes {
+        display: grid; /*filas, columnas*/
+        list-style:none;
+        text-align: left;
+        }
 }
