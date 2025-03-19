@@ -1,3 +1,9 @@
+
+
+
+
+
+/*-----------------------------------------------Tamaño del logo--------------------------*/
 .imgLogo {
     width: 17%;
 }
@@ -11,10 +17,11 @@
     display: flex;
     gap: 0.5px;
     font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 300;
-    font-style: normal;
-    font-variation-settings: "wdth" 87.5;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 87.5;
 }
 
 .colorLink {
@@ -35,6 +42,7 @@
 /*color de fondo del boton*/
 button {
     background-color: #e9d6be;
+    ;
 }
 
 /*fondo del button (color)*/
@@ -47,15 +55,13 @@ button:hover {
 a {
     text-decoration: none;
 }
-
-.textoCentrado {
+.textoCentrado{
     text-align: center;
 }
-
-.activo {
+.activo{
     background-color: #ab843031;
-    padding: 3px;
-    margin: auto;
+   padding:3px;
+   margin:auto;
     border-radius: 9px;
 }
 
@@ -83,8 +89,8 @@ a {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-}
-
+  }
+  
 
 /*Color de subtitulos de Servicios*/
 .subtitulos {
@@ -93,10 +99,10 @@ a {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-
-
-}
-
+  
+  
+  }
+  
 
 /*----------------------------------------------CONTENEDORES--------------------------------------------*/
 .contenedorSuperior {
@@ -138,7 +144,7 @@ a {
     border-radius: 15px;
     padding: 5px;
     margin: 10px;
-
+    
 }
 
 .tamañoImgCarrusel {
@@ -153,7 +159,7 @@ a {
 }
 
 /*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
-footer {
+FOOTER {
     background-color: #e4ceb4;
     /*color de fondo del footer*/
 }
@@ -251,8 +257,8 @@ footer {
     }
 
     .subtitulos {
-        text-align: center;
-
+       text-align: center;
+       
     }
 
     .servicios {
@@ -271,7 +277,7 @@ footer {
         font-size: 20px;
     }
 
-
+    
     .tamañoImgServicios {
         width: 65%;
         border-radius: 15px;
@@ -307,13 +313,9 @@ footer {
         margin-bottom: 10px;
         padding: 0;
     }
-
     .redes {
-        display: grid;
-        /*filas, columnas*/
-        list-style: none;
+        display: grid; /*filas, columnas*/
+        list-style:none;
         text-align: left;
-
-    }
-
+        }
 }
