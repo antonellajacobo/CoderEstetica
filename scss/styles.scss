@@ -1,3 +1,12 @@
+//Variables
+$color1: rgb(255, 255, 255);
+$color2: #c9ab7085;
+$color3: #e4ceb4;
+
+//Listas/ Arrays
+$paletaDeColores: rgb(255, 255, 255), #c9ab7085, #e4ceb4;
+
+
 
 
 
@@ -9,27 +18,31 @@
 }
 
 /*-------------------------------------------------------LINKS----------------------------------------------------------*/
-.linkWeb .contenedorLinks:hover {
-    filter: drop-shadow(0px 0px 5px #aa4d17);
-}
-
+//Nesting
 .linkWeb {
     display: flex;
     gap: 0.5px;
     font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 87.5;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 87.5;
+
+    .contenerdorLinks {
+        &:hover {
+            filter: drop-shadow(0px 0px 5px #aa4d17);
+        }
+    }
 }
 
+
 .colorLink {
-    color: rgb(255, 255, 255);
+    color: nth($paletaDeColores, 1)
 }
 
 .contenedorLinks {
-    background-color: #c9ab7085;
+    background-color: nth($paletaDeColores , 2);
     margin: 7px;
     padding: 9px;
     border-radius: 15px;
@@ -42,26 +55,27 @@
 /*color de fondo del boton*/
 button {
     background-color: #e9d6be;
-    ;
-}
 
-/*fondo del button (color)*/
-button:hover {
-    filter: drop-shadow(0px 0px 5px #aa7b17);
-}
+    &:hover {
+        filter: drop-shadow(0px 0px 5px #aa7b17);
+        /*fondo del button (color)*/
 
+    }
+}
 /*------------------------------------ESTILOS/COLORES-------------------------------------------------*/
 /*elimina la linea debajo del texto*/
 a {
     text-decoration: none;
 }
-.textoCentrado{
+
+.textoCentrado {
     text-align: center;
 }
-.activo{
+
+.activo {
     background-color: #ab843031;
-   padding:3px;
-   margin:auto;
+    padding: 3px;
+    margin: auto;
     border-radius: 9px;
 }
 
@@ -82,15 +96,15 @@ a {
 
 /*Color de fondo de "Servicios"*/
 .serviciosColor {
-    background-color: #e4ceb4;
-    color: rgb(255, 255, 255);
+    background-color: nth($paletaDeColores , 3);
+    color: nth($paletaDeColores , 1);
     text-align: center;
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  }
-  
+}
+
 
 /*Color de subtitulos de Servicios*/
 .subtitulos {
@@ -99,10 +113,10 @@ a {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
-  
-  
-  }
-  
+
+
+}
+
 
 /*----------------------------------------------CONTENEDORES--------------------------------------------*/
 .contenedorSuperior {
@@ -144,7 +158,7 @@ a {
     border-radius: 15px;
     padding: 5px;
     margin: 10px;
-    
+
 }
 
 .tamañoImgCarrusel {
@@ -160,7 +174,7 @@ a {
 
 /*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
 FOOTER {
-    background-color: #e4ceb4;
+    background-color: nth($paletaDeColores, 3);
     /*color de fondo del footer*/
 }
 
@@ -185,7 +199,7 @@ main .pestañaProductos {
 
 .caja1 {
     display: grid;
-    background-color: #e4ceb4;
+    background-color: nth($paletaDeColores, 3);
 
 }
 
@@ -230,19 +244,25 @@ footer {
         margin-bottom: 20px;
     }
 
+    // Nesting
     .caja1 {
         width: 100%;
         margin-bottom: 20px;
+
+        h3 {
+            text-align: center;
+        }
     }
 
     .caja2 {
         width: 100%;
+
+        h1 {
+            text-align: center;
+        }
     }
 
-    .caja1 h3 .caja2 h1 {
-        text-align: center;
 
-    }
 
     .linkWeb {
         flex-direction: column;
@@ -257,8 +277,8 @@ footer {
     }
 
     .subtitulos {
-       text-align: center;
-       
+        text-align: center;
+
     }
 
     .servicios {
@@ -277,7 +297,7 @@ footer {
         font-size: 20px;
     }
 
-    
+
     .tamañoImgServicios {
         width: 65%;
         border-radius: 15px;
@@ -285,10 +305,13 @@ footer {
         margin: 10px;
     }
 
-    .galeriaProductos .contenedor {
-        width: 100%;
-        padding: 10px;
+    .galeriaProductos {
+        .contenedor {
+            width: 100%;
+            padding: 10px;
+        }
     }
+
 
     .tamañoImgCarrusel {
         width: 100%;
@@ -309,13 +332,15 @@ footer {
         padding: 10px;
     }
 
-    .redes li {
-        margin-bottom: 10px;
-        padding: 0;
-    }
     .redes {
-        display: grid; /*filas, columnas*/
-        list-style:none;
+        display: grid;
+        /*filas, columnas*/
+        list-style: none;
         text-align: left;
+
+        li {
+            margin-bottom: 10px;
+            padding: 0;
         }
+    }
 }

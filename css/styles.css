@@ -5,10 +5,6 @@
 }
 
 /*-------------------------------------------------------LINKS----------------------------------------------------------*/
-.linkWeb .contenedorLinks:hover {
-  filter: drop-shadow(0px 0px 5px #aa4d17);
-}
-
 .linkWeb {
   display: flex;
   gap: 0.5px;
@@ -17,6 +13,9 @@
   font-weight: 300;
   font-style: normal;
   font-variation-settings: "wdth" 87.5;
+}
+.linkWeb .contenerdorLinks:hover {
+  filter: drop-shadow(0px 0px 5px #aa4d17);
 }
 
 .colorLink {
@@ -37,10 +36,9 @@
 button {
   background-color: #e9d6be;
 }
-
-/*fondo del button (color)*/
 button:hover {
   filter: drop-shadow(0px 0px 5px #aa7b17);
+  /*fondo del button (color)*/
 }
 
 /*------------------------------------ESTILOS/COLORES-------------------------------------------------*/
@@ -214,10 +212,13 @@ footer {
     width: 100%;
     margin-bottom: 20px;
   }
+  .caja1 h3 {
+    text-align: center;
+  }
   .caja2 {
     width: 100%;
   }
-  .caja1 h3 .caja2 h1 {
+  .caja2 h1 {
     text-align: center;
   }
   .linkWeb {
@@ -270,14 +271,15 @@ footer {
     text-align: center;
     padding: 10px;
   }
+  .redes {
+    display: grid;
+    /*filas, columnas*/
+    list-style: none;
+    text-align: left;
+  }
   .redes li {
     margin-bottom: 10px;
     padding: 0;
-  }
-  .redes {
-    display: grid; /*filas, columnas*/
-    list-style: none;
-    text-align: left;
   }
 }
 
