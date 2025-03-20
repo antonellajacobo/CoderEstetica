@@ -1,0 +1,21 @@
+
+//mixin
+
+@mixin propiedades ($margin, $padding, $borderRadius) {
+    margin: $margin;
+    padding: $padding;
+    border-radius: $borderRadius;
+}
+
+@mixin basicGrid ($display, $colums){
+    display: $display;
+    grid-template-columns: $colums;
+
+}
+
+@mixin fontGoogle ($fontFamily, $fOptionalSiz, $fWeight, $fStyle){
+    font-family: $fontFamily, sans-serif;
+    font-optical-sizing: $fOptionalSiz;
+    font-weight: $fWeight;
+    font-style: $fStyle;
+ }

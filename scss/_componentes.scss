@@ -1,0 +1,103 @@
+@use 'mixins' as mixin;
+@use 'variables' as variable;
+@use 'extends' as extend;
+/*-----------------------------------------------Tamaño del logo--------------------------*/
+.imgLogo {
+    width: 17%;
+}
+/*-------------------------------------------------------LINKS----------------------------------------------------------*/
+//Nesting
+.linkWeb {
+    display: flex;
+    gap: 0.5px;
+    @include mixin.fontGoogle("Open Sans", auto, 300, normal);
+    font-variation-settings: "wdth" 87.5;
+
+    .contenerdorLinks {
+        &:hover {
+            filter: drop-shadow(0px 0px 5px #aa4d17);
+        }
+    }
+}
+
+
+.colorLink {
+    color: nth(variable.$paletaDeColores, 1);
+}
+
+.contenedorLinks {
+    background-color: nth(variable.$paletaDeColores , 2);
+    @include mixin.propiedades(7px,9px ,15px );
+    @extend %flexBasico;
+}
+
+/*------------------------------------------------------BOTONES-------------------------------------------------------*/
+
+/*color de fondo del boton*/
+button {
+    background-color: #e9d6be;
+
+    &:hover {
+        filter: drop-shadow(0px 0px 5px #aa7b17);
+        /*fondo del button (color)*/
+
+    }
+}
+
+/*------------------------------------ESTILOS/COLORES------------------
+-------------------------------*/
+/*elimina la linea debajo del texto*/
+a {
+    text-decoration: none;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.activo {
+    background-color: #ab843031;
+    @include mixin.propiedades(auto,3px ,9px );
+}
+
+//------------------Estilos de font/fuente-------------------
+/*Negrita a las letras*/
+.sub {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+/*titulo Centro de estetica*/
+.titulo {
+    color: #cfa64c;
+    margin-left: 40%;
+    /*margen de lado izquierdo*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /*fuentes*/
+}
+
+/*Color de fondo de "Servicios"*/
+.serviciosColor {
+    background-color: nth(variable.$paletaDeColores , 3);
+    color: nth(variable.$paletaDeColores , 1);
+    text-align: center;
+    @include mixin.fontGoogle("Quicksand",auto ,300 ,normal );
+    //font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weight: 300; font-style: normal;
+}
+
+
+/*Color de subtitulos de Servicios*/
+.subtitulos {
+    color: #bd9c42;
+    @include mixin.fontGoogle("Quicksand",auto ,300 ,normal );
+    //font-family: "Quicksand", sans-serif; font-optical-sizing: auto; font-weight: 300; font-style: normal;
+
+
+}
+
+/*----------------------------------------------CONTENEDORES--------------------------------------------*/
+.contenedorSuperior {
+    display: flex;
+    justify-content: space-between;
+    /*backdrop-filter: blur(10px);*/
+}

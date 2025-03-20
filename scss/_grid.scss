@@ -1,0 +1,35 @@
+@use 'mixins' as mixin;
+@use 'variables' as variable;
+/*-------------------------GRID------------------------------*/
+main .pestañaProductos {
+    @include mixin.basicGrid(grid,20% 1fr );
+     //display: grid;  grid-template-columns: 20% 1fr;
+}
+
+.caja1 {
+    display: grid;
+    background-color: nth(variable.$paletaDeColores, 3);
+
+}
+
+.caja2 {
+    margin-left: 30px;
+}
+
+.servicios {
+    @include mixin.basicGrid(grid, repeat(3,1fr) );
+  //  display: grid; grid-template-columns: repeat(3, 1fr);
+    list-style: none;
+    gap: 120px;
+    align-items: center;
+}
+
+.productos {
+    @include mixin.basicGrid(grid, repeat(3,1fr) );
+    //display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 6px;
+}
+
+footer {
+    margin-top: 10px;
+}

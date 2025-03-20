@@ -1,0 +1,9 @@
+%gridBasico {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+%flexBasico {
+    display: flex;
+    flex-direction: column;
+}   

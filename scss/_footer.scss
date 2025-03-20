@@ -1,0 +1,16 @@
+@use 'variables' as variable;
+/*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
+FOOTER {
+    background-color: nth(variable.$paletaDeColores, 3);
+    /*color de fondo del footer*/
+}
+
+.redes {
+    display: flex;
+    list-style: none;
+}
+
+.anchoRedes {
+    width: 10%;
+    padding: 1%;
+}

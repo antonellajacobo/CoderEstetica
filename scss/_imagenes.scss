@@ -1,0 +1,18 @@
+@use 'mixins' as mixin;
+/*---------------------------------------------------TAMAÑO DE IMAGENES--------------------------------------*/
+/*tamaño de imagenes*/
+.tamañoImgServicios {
+    width: 70%;
+    @include mixin.propiedades(10px,5px ,15px );
+}
+
+.tamañoImgCarrusel {
+    width: 65%;
+    margin: 50px auto;
+
+}
+
+.tamañoImgCarrito {
+    width: 23px;
+    margin: 5px;
+}

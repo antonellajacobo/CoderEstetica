@@ -1,0 +1,14 @@
+@use 'mixins' as mixin;
+@use 'extends' as ext;
+/*--------------------------------------------------CARDS-------------------------------------------------*/
+/*contenedor para los servicios*/
+.card {
+    background-color: #d3af815b;
+    width: 75%;
+    /*fondo*/
+    place-items: center;
+    @extend %flexBasico;
+    @include mixin.propiedades(15px,15px ,30px );
+    
+    /*border radius-padding*/
+}
