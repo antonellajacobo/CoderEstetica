@@ -9,6 +9,12 @@
     place-items: center;
     @extend %flexBasico;
     @include mixin.propiedades(15px,15px ,30px );
-    
     /*border radius-padding*/
+
+    //transition
+    transition: 1.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
 }

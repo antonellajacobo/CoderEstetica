@@ -32,6 +32,10 @@
   margin: 7px;
   padding: 9px;
   border-radius: 15px;
+  transition: 1.1s;
+}
+.contenedorLinks:hover {
+  transform: scale(1.13);
 }
 
 /*------------------------------------------------------BOTONES-------------------------------------------------------*/
@@ -115,6 +119,10 @@ a {
   padding: 15px;
   border-radius: 30px;
   /*border radius-padding*/
+  transition: 1.3s;
+}
+.card:hover {
+  transform: scale(1.1);
 }
 
 /*---------------------------------------------------TAMAÑO DE IMAGENES--------------------------------------*/
@@ -275,11 +283,5 @@ footer {
     padding: 0;
   }
 }
-/*-----------------------------------------------Tamaño del logo--------------------------*/
-.imgLogo {
-  width: 17%;
-}
-
-/*----------------------------------------------------------GRID CODIGO-------------------------------------------------*/
 
 /*# sourceMappingURL=styles.css.map */
