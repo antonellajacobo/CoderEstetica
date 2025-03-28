@@ -1,4 +1,4 @@
-@use 'variables' as variable;
+@use 'utilidades/variables' as variable;
 /*-------------------------------------------------------------FOOTER-------------------------------------------------------------------------*/
 FOOTER {
     background-color: nth(variable.$paletaDeColores, 3);
@@ -11,6 +11,6 @@ FOOTER {
 }
 
 .anchoRedes {
-    width: 10%;
+    width: 40px;
     padding: 1%;
 }

@@ -1,5 +1,5 @@
-@use 'mixins' as mixin;
-@use 'variables' as variable;
+@use 'utilidades/mixins' as mixin;
+@use 'utilidades/variables' as variable;
 /*-------------------------GRID------------------------------*/
 main .pestañaProductos {
     @include mixin.basicGrid(grid,20% 1fr );

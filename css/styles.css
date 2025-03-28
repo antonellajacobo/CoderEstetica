@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.card, .contenedorLinks {
+.card, .cardPreguntas, .contenedorLinks {
   display: flex;
   flex-direction: column;
 }
@@ -32,7 +32,7 @@
   margin: 7px;
   padding: 9px;
   border-radius: 15px;
-  transition-timing-function: 1.1s;
+  transition: 1.1s;
 }
 .contenedorLinks:hover {
   transform: scale(1.13);
@@ -125,6 +125,21 @@ a {
   transform: scale(1.1);
 }
 
+.cardPreguntas {
+  background-color: rgba(211, 175, 129, 0.3568627451);
+  width: 90%;
+  /*fondo*/
+  place-items: center;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 30px;
+  /*border radius-padding*/
+  transition-timing-function: 1.3s;
+}
+.cardPreguntas:hover {
+  transform: scale(1.1);
+}
+
 /*---------------------------------------------------TAMAÑO DE IMAGENES--------------------------------------*/
 /*tamaño de imagenes*/
 .tamañoImgServicios {
@@ -156,7 +171,7 @@ FOOTER {
 }
 
 .anchoRedes {
-  width: 10%;
+  width: 40px;
   padding: 1%;
 }
 

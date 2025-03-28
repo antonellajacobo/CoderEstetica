@@ -1,10 +1,26 @@
-@use 'mixins' as mixin;
-@use 'extends' as ext;
+@use 'utilidades/mixins' as mixin;
+@use './utilidades/extends' as extend;
 /*--------------------------------------------------CARDS-------------------------------------------------*/
 /*contenedor para los servicios*/
 .card {
     background-color: #d3af815b;
     width: 75%;
+    /*fondo*/
+    place-items: center;
+    @extend %flexBasico;
+    @include mixin.propiedades(15px,15px ,30px );
+    /*border radius-padding*/
+
+    //transition
+    transition-timing-function: 1.3s;
+
+    &:hover{
+        transform: scale(1.1);
+    }
+}
+.cardPreguntas{
+    background-color: #d3af815b;
+    width: 90%;
     /*fondo*/
     place-items: center;
     @extend %flexBasico;
